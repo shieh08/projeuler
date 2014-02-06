@@ -1,6 +1,3 @@
-# Set the target number here.
-target_number = 600851475143
-
 # Function to figure out prime or not.
 def is_prime(n):
   if n < 2:
@@ -16,10 +13,15 @@ def is_prime(n):
       return False
   return True
 
-for x in range(1,target_number):
+# Set the target number here.
+target_number = 600851475143
+x = 1
+
+while target_number > 1:
+  x += 1
   # Check to see if x is a factor of target_number.
   if target_number%x == 0:
-    if target_number/x < x:
-      break
-    elif is_prime(x):
+    if is_prime(x):
+      # Divide number by prime number to find other prime factors.
+      target_number = target_number/x
       print(x)
