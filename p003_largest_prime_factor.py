@@ -1,3 +1,6 @@
+# projecteuler.net/problem=3
+# What is the largest prime factor of the number 600851475143
+
 # Function to figure out prime or not.
 def is_prime(n):
   if n < 2:

@@ -1,3 +1,8 @@
+# projecteuler.net/problem=5
+# What is the smallest positive number 
+# that is evenly divisible by all of the numbers 
+# from 1 to 20?
+
 def recurse_check(number, multiple):
   if multiple == 0:
     return True
